@@ -6,5 +6,5 @@ require('es6-promise').polyfill();
 
 window.React = React;
 
-ReactDOM.render( < App / > , document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
 /**/

@@ -8,6 +8,8 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var source = require('vinyl-source-stream');
 var sass = require('gulp-sass');
+var imagemin = require('gulp-imagemin');
+var imageminMozjpeg = require('imagemin-mozjpeg');
 
 var bundler = {
     w: null,
@@ -48,10 +50,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('html', function() {
-    var assets = $.useref.assets();
     return gulp.src('app/*.html')
-        .pipe(assets)
-        .pipe(assets.restore())
         .pipe($.useref())
         .pipe(gulp.dest('dist'))
         .pipe($.size());
@@ -59,11 +58,14 @@ gulp.task('html', function() {
 
 gulp.task('images', function() {
     return gulp.src('app/images/**/*')
-        .pipe(($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 7}),
+            imageminMozjpeg({
+                quality: 40
+            })
+        ],{verbose:true}))
         .pipe(gulp.dest('dist/images/'))
         .pipe($.size());
 });

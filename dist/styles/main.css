@@ -54,7 +54,8 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted; }
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
 
 b,
 strong {
@@ -346,8 +347,7 @@ label,
 select,
 summary,
 textarea {
-  -ms-touch-action: manipulation;
-      touch-action: manipulation; }
+  touch-action: manipulation; }
 
 table {
   border-collapse: collapse;
@@ -1426,10 +1426,10 @@ pre {
   .form-control::-webkit-input-placeholder {
     color: #999;
     opacity: 1; }
-  .form-control::-moz-placeholder {
+  .form-control:-ms-input-placeholder {
     color: #999;
     opacity: 1; }
-  .form-control:-ms-input-placeholder {
+  .form-control::-ms-input-placeholder {
     color: #999;
     opacity: 1; }
   .form-control::placeholder {
@@ -3145,10 +3145,8 @@ input[type="button"].btn-block {
 @media (min-width: 544px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem; }
     .card-columns .card {
       width: 100%; } }
@@ -3794,6 +3792,7 @@ button.close {
   .modal.fade .modal-dialog {
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     -webkit-transform: translate(0, -25%);
             transform: translate(0, -25%); }
   .modal.in .modal-dialog {
@@ -4082,6 +4081,7 @@ button.close {
       .carousel-inner > .carousel-item {
         transition: -webkit-transform .6s ease-in-out;
         transition: transform .6s ease-in-out;
+        transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
         -webkit-perspective: 1000px;
