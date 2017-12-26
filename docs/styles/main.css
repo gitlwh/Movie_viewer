@@ -4798,8 +4798,7 @@ body {
   .search-container .searchbox .typeahead {
     width: 100%;
     background: none;
-    border-bottom: solid 1px white;
-    font-weight: bold; }
+    border-bottom: solid 1px white; }
     .search-container .searchbox .twitter-typeahead .form-control,
     .search-container .searchbox .typeahead .form-control {
       -webkit-animation: fadein ease-in 0.5s;
