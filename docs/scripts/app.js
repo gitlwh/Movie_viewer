@@ -310,7 +310,7 @@ var Card = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'col-xs-6' },
-                ' Vote Average35: ',
+                ' Vote Average: ',
                 _react2.default.createElement(
                   'span',
                   { className: 'meta-data' },
@@ -411,7 +411,7 @@ var SearchBox = function (_Component) {
             _react2.default.createElement(
               'form',
               { className: 'searchbox' },
-              _react2.default.createElement('input', { ref: 'search suggestion', onClick: this.handleChange, className: 'searchbox__input typeahead form-control', type: 'text', placeholder: 'Search Movie sjjs Title...', id: 'q' })
+              _react2.default.createElement('input', { ref: 'search suggestion', onClick: this.handleChange, className: 'searchbox__input typeahead form-control', type: 'text', placeholder: 'Search Movie Title...', id: 'q' })
             )
           )
         )
