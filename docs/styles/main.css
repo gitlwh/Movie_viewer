@@ -4753,12 +4753,12 @@ html {
 body {
   background: black;
   background-repeat: no-repeat;
-  font-family: "Lato", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   background-size: cover;
   height: 100%; }
 
 #outer-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 0.2) 40%, black 90%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75) 15%, rgba(255, 255, 255, 0.2) 40%, black 90%);
   background-attachment: fixed;
   margin: 0; }
 
@@ -4798,7 +4798,8 @@ body {
   .search-container .searchbox .typeahead {
     width: 100%;
     background: none;
-    border-bottom: solid 1px white; }
+    border-bottom: solid 1px white;
+    font-weight: bold; }
     .search-container .searchbox .twitter-typeahead .form-control,
     .search-container .searchbox .typeahead .form-control {
       -webkit-animation: fadein ease-in 0.5s;
@@ -4842,7 +4843,7 @@ body {
 /* card */
 .cardcont {
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.85); }
+  background: rgba(255, 255, 255, 0.85); }
 
 /* poster */
 .poster-container .poster {
@@ -4852,7 +4853,7 @@ body {
 /* meta data */
 .meta-data-container {
   padding: 15px;
-  color: #fafafa; }
+  color: black; }
   .meta-data-container h1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -4860,7 +4861,7 @@ body {
     font-size: 2.2em; }
   .meta-data-container .additional-details {
     margin: 35px 0 20px;
-    font-family: "Oswald", sans-serif; }
+    font-family: 'Fjalla One', sans-serif; }
     .meta-data-container .additional-details .genre-list {
       display: block;
       color: #00FC87;
@@ -4872,14 +4873,14 @@ body {
       margin-top: 15px; }
   .meta-data-container .meta-data {
     display: block;
-    color: #00FC87;
+    color: #3F51B5;
     font-size: 1.6em;
     line-height: 1.1em; }
 
 .tagline {
   display: block;
   padding-bottom: 0.25em;
-  color: #00FC87;
+  color: black;
   font-size: 1.3em;
   font-family: "Oswald", sans-serif; }
 

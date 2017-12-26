@@ -1,7 +1,7 @@
 /* card */
 .cardcont {
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 /* poster */
@@ -15,7 +15,7 @@
 /* meta data */
 .meta-data-container {
   padding: 15px;
-  color: $lightGrey;
+  color: black;
 
   h1 {
     text-transform: uppercase;
@@ -26,7 +26,7 @@
 
   .additional-details {
     margin: 35px 0 20px;
-    font-family: $oswald;
+    font-family: 'Fjalla One', sans-serif;
 
     .genre-list {
       display: block;
@@ -50,7 +50,7 @@
 
   .meta-data {
     display: block;
-    color: $limeGreen;
+    color: #3F51B5;
     font-size: 1.6em;
     line-height: 1.1em;
   }
@@ -59,7 +59,7 @@
 .tagline {
   display: block;
   padding-bottom: 0.25em;
-  color: $limeGreen;
+  color: black;
   font-size: 1.3em;
   font-family: $oswald;
 }

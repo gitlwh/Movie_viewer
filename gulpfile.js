@@ -132,11 +132,11 @@ gulp.task('serve:production', sync(['build:production', 'serve']));
 
 gulp.task('default', sync(['clean-bundle', 'serve','copy-docs']), function() {
     bundler.watch();
-    gulp.watch('app/scripts/**/*.js', ['scripts','watch','copy-docs']);
-    gulp.watch('app/*.html', ['html','watch','copy-docs']);
-    gulp.watch('app/styles/**/*.scss', ['styles','watch','copy-docs']);
-    gulp.watch('app/images/**/*', ['images','watch','copy-docs']);
-    gulp.watch('app/fonts/**/*', ['fonts','watch','copy-docs']);
+    gulp.watch('app/scripts/**/*.js', sync(['scripts','copy-docs']));
+    gulp.watch('app/*.html', sync(['html','copy-docs']));
+    gulp.watch('app/styles/**/*.scss', sync(['styles','copy-docs']));
+    gulp.watch('app/images/**/*', sync(['images','copy-docs']));
+    gulp.watch('app/fonts/**/*', sync(['fonts','copy-docs']));
 });
 
 
