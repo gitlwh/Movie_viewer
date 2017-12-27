@@ -1,12 +1,12 @@
 {
-  "name": "reactjs-tmdb-app",
+  "name": "Movie_viewer",
   "version": "0.0.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SKempin/reactjs-tmdb-app.git"
+    "url": "https://github.com/gitlwh/Movie_viewer.git"
   },
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp"
   },
   "dependencies": {
     "bloodhound-js": "^1.2.1",
@@ -61,6 +61,6 @@
       ]
     ]
   },
-  "author": "Stephen Kempin <contact@stephenkempin.co.uk>",
+  "author": "Weiheng <weihengli.tj@gmail.com>",
   "license": "MIT"
 }
